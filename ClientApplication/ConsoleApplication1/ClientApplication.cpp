@@ -39,7 +39,9 @@ int main(int argc, char *argv[])
 	WSADATA wsa;
 	SOCKET s;
 	struct sockaddr_in server;
-	const char *message ;
+	//const char *message ;
+	char client_arr[200];
+	char *message = client_arr;
 	char server_reply[2000];
 	int recv_size, SelectTiming;
 	int i = 1, case_select = 0;
@@ -95,8 +97,29 @@ int main(int argc, char *argv[])
 
 	//Heartbeat message should be sent every 15 sec
 
+
+
+
 	do {
-		message = "ALIVE\n";
+
+		scanf("%s", message);
+
+		if (send(s, message, strlen(message), 0) < 0)
+		{
+			puts("Send failed");
+			return 1;
+		}
+
+		printf("desired message sent\n");
+	
+	} while (SelectTiming = recvTimeOutTCP(s, 1, 0) == 0);
+
+#if 0
+	do {
+		//message = "ALIVE\n";
+
+		scanf("%s",message);
+
 		if (send(s, message, strlen(message), 0) < 0)
 		{
 			puts("Send failed");
@@ -136,7 +159,7 @@ int main(int argc, char *argv[])
 		}
 	} while (SelectTiming = recvTimeOutTCP(s, 5, 0) == 0);
 
-
+#endif
 
 #if 0
 	//Receive a reply from the server

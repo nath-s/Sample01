@@ -1,8 +1,8 @@
 ﻿  ConsoleApplication1.cpp
-c:\users\snath\documents\github\projects\simple01\serverapplication\consoleapplication1\consoleapplication1.cpp(266): warning C4129: 'L': unrecognized character escape sequence
-c:\users\snath\documents\github\projects\simple01\serverapplication\consoleapplication1\consoleapplication1.cpp(266): warning C4129: ' ': unrecognized character escape sequence
-c:\users\snath\documents\github\projects\simple01\serverapplication\consoleapplication1\consoleapplication1.cpp(268): warning C4129: 'L': unrecognized character escape sequence
-c:\users\snath\documents\github\projects\simple01\serverapplication\consoleapplication1\consoleapplication1.cpp(268): warning C4129: ' ': unrecognized character escape sequence
+c:\users\snath\documents\github\projects\simple01\serverapplication\consoleapplication1\consoleapplication1.cpp(267): warning C4129: 'L': unrecognized character escape sequence
+c:\users\snath\documents\github\projects\simple01\serverapplication\consoleapplication1\consoleapplication1.cpp(267): warning C4129: ' ': unrecognized character escape sequence
+c:\users\snath\documents\github\projects\simple01\serverapplication\consoleapplication1\consoleapplication1.cpp(269): warning C4129: 'L': unrecognized character escape sequence
+c:\users\snath\documents\github\projects\simple01\serverapplication\consoleapplication1\consoleapplication1.cpp(269): warning C4129: ' ': unrecognized character escape sequence
 c:\users\snath\documents\github\projects\simple01\serverapplication\consoleapplication1\consoleapplication1.cpp(149): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
   c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winsock2.h(1849): note: see declaration of 'inet_ntoa'
 c:\users\snath\documents\github\projects\simple01\serverapplication\consoleapplication1\consoleapplication1.cpp(190): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings

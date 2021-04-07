@@ -37,7 +37,7 @@ int main(int argc, char *argv[])
 	//Message description
 	heart_beat = "ALIVE\n";
 	close = "Close\n";
-	Exit = "Exit\n";
+	Exit = "Exit";
 
 	//server welcome message to client
 	message = "HI THERE";
@@ -206,6 +206,7 @@ int main(int argc, char *argv[])
 					//Add a NULL terminating character to make it a proper string before printing
 					client_reply[byte_received] = '\0';
 					puts(client_reply);
+					count++;
 
 					if (strcmp(client_reply, heart_beat) == 0)
 					{
@@ -229,8 +230,8 @@ int main(int argc, char *argv[])
 						//Close the socket and mark as 0 in list for reuse 
 						//closesocket(sd);
 						client_socket[i] = 0;
-						app_terminate = TRUE;
-						break;
+						//app_terminate = TRUE;
+						//break;
 					}
 				}
 				//10 message received
